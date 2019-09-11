@@ -8,7 +8,6 @@ import os
 from openpyxl import load_workbook
 from openpyxl import Workbook
 from pyquery import PyQuery as pq
-import traceback
 
 #MD5加密
 def md5Encode(str1):
@@ -203,7 +202,6 @@ def query(file, xterm):
             person[name[0].strip()] = score
 
         except Exception as e:
-            print(traceback.format_exc())
             errors += 1
 
 
